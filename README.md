@@ -61,5 +61,9 @@ Other fancy things can be added as an when needed.
 We are starting this in month of October to support [Hacktoberfest](https://hacktoberfest.digitalocean.com) and encourage new developers to contribute openly. We are totally open to any kind of contribution, even improving this readme file. 
 Just try to keep it in a good shape and learn good code
 
+Another point to remember is the separation between code and configuration. This will help us plug and play the same codebase with different configuration.
+So starting with firebase configuration, we have created a config.js file which has to be used for all configuration storage.
+The file is intended to be used with your own Firebase Project and so the actual configuration is ignored using gitignore and a boilerplate con file. is created named config.reference.js which can be saved as config.js and all the app specific configuration can be plugged into it.
+
 # Get in touch
 We are all connected using Discord and you can join it [here](https://discord.gg/mXfydfW)
